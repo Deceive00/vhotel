@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bg-carousel.css" />
+  <link rel="stylesheet" type="text/css" href="../css/reserve.css" />
+  <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+  <title>Reservation</title>
+</head>
+<body>
+  <nav>
+    <div id="navbar">
+      <div class="left-navbar-container">
+        <a href="home.html">
+          <img class="vhotel-logo-navbar" src="../assets/images/navbar/vhotel-logo.png" alt="vhotel-logo">
+        </a>
+      </div>
+
+      <div class="center-navbar-container">
+        <a href="home.html">HOME</a>
+        <a href="about-us.html">ABOUT US</a>
+        <a href="rooms.html">ROOMS</a>
+        <a href="facility.html">FACILITIES</a>
+      </div>
+    <div class="right-navbar-container">
+      <a class="reservation-btn" href="reserve.html">RESERVE NOW</a>
+    </div>
+    <div id="burger">
+      <button id="open-menu" onclick="return openSideBar()">
+        <div id="open-img"></div>
+      </button>
+    </div>
+    </div>
+    <div id="menubar">
+      <button class="close-menu" onclick="return closeSideBar()">
+        <img src="../assets/images/navbar/close.png" alt="">
+      </button>
+      <a href="home.html" class="redirect-page home">HOME</a>
+      <a href="about-us.html" class="redirect-page">ABOUT US</a>
+      <a href="rooms.html" class="redirect-page">ROOMS</a>
+      <a href="facility.html" class="redirect-page">FACILITIES</a>
+      <a href="reserve.html" class="redirect-page">RESERVE NOW</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="bg-black">
+    </div>
+    <div class="carousel-background">
+      <div class="slide slide-1"></div>
+      <div class="slide slide-2"></div>
+      <div class="slide slide-3"></div>
+    </div>
+    <div class="picture-text">
+      <p class="vhotel-page-title">RESERVATION</p>
+    </div>
+    <div class="indicator-container">
+      <input type="radio" name="carousel-indicator" id="indicator-1" class="page-indicator" checked>
+      <label for="indicator-1" class="page-indicator-style"></label>
+
+      <input type="radio" name="carousel-indicator" id="indicator-2" class="page-indicator">
+      <label for="indicator-2" class="page-indicator-style"></label>
+
+      <input type="radio" name="carousel-indicator" id="indicator-3" class="page-indicator">
+      <label for="indicator-3" class="page-indicator-style"></label>
+    </div>
+  </header>
+
+  <section class="form-section">
+    <div class="form-container">
+      <h1>Make a Reservation at VHOTEL</h1>
+      <form id="reservation-form">
+        <div class="input-group">
+          <label for="name-input">Full Name</label>
+          <input type="text" id="name-input" name="name-input" onfocusout="validateName()" placeholder="Full Name">
+          <div id="name-error" class="error-message"></div>
+        </div>
+        <div class="input-group">
+          <label for="email-input">Email</label>
+          <input type="text" id="email-input" name="email-input" onfocusout="validateEmail()" placeholder="Email">
+          <div id="email-error" class="error-message"></div>
+        </div>
+        <div class="date-container">
+          <div class="input-group">
+            <label for="check-in-date">Check-in Date</label>
+            <input type="date" id="check-in-date" name="check-in-date" onfocusout="validateCheckInDate()">
+            <div id="check-in-date-error" class="error-message"></div>
+          </div>
+          <div class="input-group">
+            <label for="check-out-date">Check-out Date:</label>
+            <input type="date" id="check-out-date" name="check-out-date" onfocusout="validateCheckOutDate()">
+            <div id="check-out-date-error" class="error-message"></div>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="room-type-input">Room Type:</label>
+          <select id="room-type-input" name="room-type-input" onfocusout="validateRoomType()">
+            <option value="">Select Room Type</option>
+            <option value="single">DELUXE OCEANLINE</option>
+            <option value="twin">EXECUTIVE TWIN OCEANLINE</option>
+            <option value="suite">PRESIDENTAL SUITE</option>
+          </select>
+          <div id="room-type-error" class="error-message"></div>
+        </div>
+        <button type="submit" class="submit-button">RESERVE NOW</button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="all-footer-content">
+        <div class="left-footer-container footer-part">
+          <div class="left-first-row">
+            <h6>VHOTEL</h6>
+            <ul>
+              <li>Jl. Jalur Sutera Barat No. 10, Alam Sutera, Tangerang</li>
+            </ul>
+          </div>
+          <div class="left-second-row">
+            <h6 class="customer-service-text">Customer Service</h6>
+            <h5 class="phone-number-footer">0813173717317</h5>
+            <p class="email-contact-footer">info.jakarta@vhotel.com</p>
+          </div>
+        </div>
+        <div class="center-footer-container footer-part">
+          <h6>Information</h6>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="facility.html">Facilities</a></li>
+            <li><a href="reserve.html">Reservation</a></li>
+          </ul>
+        </div>
+        <div class="right-footer-container footer-part">
+          <h6>Sign up for offer, news, and travel insipiration</h6>
+          <form action="">
+            <div class="footer-input-container">
+              <input type="email" class="footer-input" placeholder="email@example.com">
+              <img src="../assets/images/about-us/right-arrow.png" class="center-footer-input" alt="">
+            </div>
+          </form>
+  
+          <div class="social-media-container">
+            <a href="https://facebook.com/" class="social-media">
+              <img src="../assets/images/footer/facebook-app-symbol.png" alt="facebook">
+            </a>
+            <a href="https://linkedin.com/" class="social-media">
+              <img src="../assets/images/footer/linkedin.png" alt="linkedin">
+            </a>
+            <a href="https://twitter.com/" class="social-media">
+              <img src="../assets/images/footer/twitter.png" alt="twitter">
+            </a>
+            <a href="https://instagram.com/" class="social-media">
+              <img src="../assets/images/footer/instagram.png" alt="instagram.png\">
+            </a>
+            <a href="https://youtube.com/" class="social-media">
+              <img src="../assets/images/footer/youtube.png" alt="youtube">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right-footer">
+        <h4>@Copyright Eldrian Daniswara Giovanni - 2602098715</h4>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/reserve.js"></script>
+  <script src="../js/carousel.js"></script>
+</body>
+</html>

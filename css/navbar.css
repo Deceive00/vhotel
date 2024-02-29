@@ -1,0 +1,227 @@
+@font-face {
+  font-family: josefin_sans;
+  src: url(../assets/Fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+button{
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+nav {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  transition: 0.5s;
+}
+
+#navbar a {
+  font-family: josefin_sans;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  transition: cubic-bezier(0.23, 1, 0.320, 1) 0.5s;
+}
+
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 3rem auto;
+  position: relative;
+  transition: 0.5s;
+}
+.left-navbar-container{
+  position: relative;
+  transition: 0.5s;
+}
+
+.vhotel-logo-navbar{
+  height:5vh;
+}
+.center-navbar-container{
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.right-navbar-container{
+  position: relative;
+}
+.reservation-btn{
+  padding: 1rem;
+  border: 1px solid #B4A192;
+
+}
+#navbar .center-navbar-container a {
+  position: relative;
+}
+
+#navbar .center-navbar-container a::after {
+  content: '';
+  width: 0%;
+  height: 1.5px;
+  display: block;
+  background: #B4A192;
+  margin: auto;
+  transition: 0.3s;
+}
+
+#navbar .center-navbar-container a:hover::after {
+  width: 100%;
+}
+
+.color {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: whitesmoke;
+}
+
+.color #navbar {
+  padding: 0.5rem 0rem;
+  margin: 0.5rem auto;
+  transition: 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.color #navbar .center-navbar-container a , .color #navbar .left-navbar-container h1{
+  color: #000;
+}
+#navbar .center-navbar-container a:hover{
+  color: #B4A192;
+}
+
+.color .right-navbar-container .reservation-btn {
+  border: 1px solid #B4A192;
+  background-color: #B4A192;
+  color: white;
+}
+
+#navbar .right-navbar-container .reservation-btn:hover{
+  color: white;
+  border:1px solid #B4A192;
+  background-color: #B4A192;
+
+}
+
+.color #navbar .right-navbar-container .reservation-btn:hover {
+  border: 1px solid #b4a192b7;
+  background-color: #B4A192b7;
+  color: white;
+}
+
+#open-img{
+  background-image: url(../assets/images/navbar/more-white.png);
+  background-size: cover;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: all 320ms ease-out 0s;
+}
+
+.color #open-img{
+  background-image: url(../assets/images/navbar/more.png);
+}
+
+#open-menu{
+  cursor: pointer;
+}
+
+#menubar{
+  position: absolute;
+  width: 0;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: whitesmoke;
+  transition: all 320ms ease-out 0s;
+  overflow-x: hidden;
+  z-index: 80;
+}
+
+#menubar a.redirect-page.home{
+  margin-top: 10vh;
+}
+
+#burger {
+  display: none;
+  transition: all 320ms ease-out 0s;
+}
+
+#burger button > img{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+
+#menubar .redirect-page{
+  display: block;
+  padding: 2rem 0;
+  margin: 0 2rem;
+  border-bottom: 1px solid #B4A192;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  transition: all 350ms ease-out 0s;
+}
+
+#open-menu{
+  border: none;
+  background-color: transparent;
+  color: black;
+  transition: all 320ms ease-out 0s;
+  cursor: pointer;
+}
+
+.close-menu img{
+  position: absolute;
+  right: 3rem;
+  width: 2rem;
+  height: 2rem;
+  top: 5vh;
+  background-color: transparent;
+  transition: all 350ms ease-out 0s;
+}
+
+.color .close-menu img{
+  top: 2rem;
+}
+
+#menubar a.reservation-btn{
+  margin-top: 5vh;
+}
+
+
+@media(max-width:830px){
+  #navbar{
+    width: 85%;
+  }
+  #menubar{
+    position: absolute;
+    top: 0;
+  }
+
+  .center-navbar-container, .right-navbar-container{
+    display: none;
+  }
+
+  #burger{
+    display: block;
+  }
+
+  #navbar .right-navbar-container .reservation-btn{
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}

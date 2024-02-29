@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bg-carousel.css" />
+  <link rel="stylesheet" type="text/css" href="../css/rooms.css" />
+  <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+  <title>Rooms</title>
+</head>
+<body>
+  <nav>
+    <div id="navbar">
+      <div class="left-navbar-container">
+        <a href="home.html">
+          <img class="vhotel-logo-navbar" src="../assets/images/navbar/vhotel-logo.png" alt="vhotel-logo">
+        </a>
+      </div>
+
+      <div class="center-navbar-container">
+        <a href="home.html">HOME</a>
+        <a href="about-us.html">ABOUT US</a>
+        <a href="rooms.html">ROOMS</a>
+        <a href="facility.html">FACILITIES</a>
+      </div>
+    <div class="right-navbar-container">
+      <a class="reservation-btn" href="reserve.html">RESERVE NOW</a>
+    </div>
+    <div id="burger">
+      <button id="open-menu" onclick="return openSideBar()">
+        <div id="open-img"></div>
+      </button>
+    </div>
+    </div>
+    <div id="menubar">
+      <button class="close-menu" onclick="return closeSideBar()">
+        <img src="../assets/images/navbar/close.png" alt="">
+      </button>
+      <a href="home.html" class="redirect-page home">HOME</a>
+      <a href="about-us.html" class="redirect-page">ABOUT US</a>
+      <a href="rooms.html" class="redirect-page">ROOMS</a>
+      <a href="facility.html" class="redirect-page">FACILITIES</a>
+      <a href="reserve.html" class="redirect-page">RESERVE NOW</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="bg-black">
+    </div>
+    <div class="carousel-background">
+      <div class="slide slide-1"></div>
+      <div class="slide slide-2"></div>
+      <div class="slide slide-3"></div>
+    </div>
+    <div class="picture-text">
+      <p class="vhotel-page-title">ROOMS</p>
+    </div>
+    <div class="indicator-container">
+      <input type="radio" name="carousel-indicator" id="indicator-1" class="page-indicator" checked>
+      <label for="indicator-1" class="page-indicator-style"></label>
+
+      <input type="radio" name="carousel-indicator" id="indicator-2" class="page-indicator">
+      <label for="indicator-2" class="page-indicator-style"></label>
+
+      <input type="radio" name="carousel-indicator" id="indicator-3" class="page-indicator">
+      <label for="indicator-3" class="page-indicator-style"></label>
+    </div>
+  </header>
+
+  <section class="rooms-section">
+    <h1>OUR ROOMS</h1>
+    <p>Indulge in Timeless Elegance at VHotel. Luxurious Rooms, Stylish Suites, and The VHOTEL Club - your gateway to exclusive privileges and breathtaking city views.</p>
+    <div class="all-room-container">
+      <div class="room-container">
+        <div class="room-picture-container">
+          <img src="../assets/images/room/room-image/room1.jpg" alt="">
+        </div>
+        <div class="description-detail-wrapper">
+          <div class="room-description-container overview-1">
+            <h3>DELUXE OCEANLINE</h3>
+            <p>Ease into your own private oasis featuring contemporary comforts and unobstructed views of Jakarta’s landscape.</p>
+            <div class="room-specification">
+              <div class="bed-spec specification">
+                <img src="../assets/images/room/logo/double-bed.png" alt="">
+                <div class="room-description">
+                  <span>King Bed</span>
+                  <span>(Extra Bed Available Upon Request)</span>
+                </div>
+              </div>
+              <div class="guest-spec specification">
+                <img src="../assets/images/room/logo/user.png" alt="">
+                <span>Two Guests</span>
+              </div>
+              <div class="size-spec specification">
+                <img src="../assets/images/room/logo/maximize.png" alt="">
+                <div class="room-description">
+                  <span>42m - 45m / </span>
+                  <span>452FT - 484FT</span>
+                </div>
+              </div>
+            </div>
+            <h5>Rp. 1.500.000 / Night</h5>
+            <div class="room-section-button-container">
+              <a href="reserve.html" class="reserve-btn-room-section">RESERVE</a>
+              <button class="learn-more-btn-room-section" onclick="showDetail(1)">LEARN MORE</button>
+            </div>
+          </div>
+          <div class="room-specification-detail detail-1">
+            <h3>AMENITIES</h3>
+            <p>Elegantly furnished with an eclectic mix of Indonesia’s traditional and modern contemporary decor, with striking views across the ocean.</p>
+            <div class="room-specification">
+              <ul>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/air-conditioner.png" alt="">
+                  <span>Air Conditioning</span>
+                </li>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/extrabed.png" alt="">
+                  <span>Extra bed allowed</span>
+
+                </li>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/balcony.png" alt="">
+                  <span>Balcony</span>
+                  
+                </li>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/closet.png" alt="">
+                  <span>Walk In Closet</span>
+                </li>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/bathroom.png" alt="">
+                  <span>Bath up and separate shower</span>
+                </li>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/coffee-cup.png" alt="">
+                  <span>Coffee and/or tea making facilities</span>
+                </li>
+              </ul>
+            </div>
+            <div class="room-section-button-container">
+              <button class="back-button back-1" onclick="backToDefault(1)">SHOW LESS</button>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+      <div class="room-container">
+        <div class="room-picture-container">
+          <img src="../assets/images/room/room-image/room2.jpeg" alt="">
+        </div>
+        <div class="description-detail-wrapper">
+          <div class="room-description-container overview-2">
+            <h3>EXECUTIVE TWIN OCEANLINE</h3>
+            <p>Serene sophistication awaits in this luxury studio with corner floor-to-ceiling windows and generous space for extended stays.</p>
+            <div class="room-specification">
+              <div class="bed-spec specification">
+                <img src="../assets/images/room/logo/double-bed.png" alt="">
+                <div class="room-description">
+                  <span>Twin Bed</span>
+                  <span>(Extra Bed Available Upon Request)</span>
+                </div>
+              </div>
+              <div class="guest-spec specification">
+                <img src="../assets/images/room/logo/user.png" alt="">
+                <span>Two Guests</span>
+              </div>
+              <div class="size-spec specification">
+                <img src="../assets/images/room/logo/maximize.png" alt="">
+                <div class="room-description">
+                  <span>42m - 45m / </span>
+                  <span>452FT - 484FT</span>
+                </div>
+              </div>
+            </div>
+            <h5>Rp. 2.500.000 / Night</h5>
+            <div class="room-section-button-container">
+              <a href="reserve.html" class="reserve-btn-room-section">RESERVE</a>
+              <button class="learn-more-btn-room-section 2" onclick="showDetail(2)">LEARN MORE</button>
+            </div>
+          </div>
+          <div class="room-specification-detail detail-2">
+            <h3>AMENITIES</h3>
+            <p>Experience a harmonious blend of Indonesia's rich heritage and modern aesthethics, complemented by breathtaking ocean vistas, in our elegantly adorned accomodatios</p>
+            <div class="room-specification">
+              <ul>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/air-conditioner.png" alt="">
+                  <span>Air Conditioning</span>
+                </li>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/extrabed.png" alt="">
+                  <span>Extra bed allowed</span>
+
+                </li>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/balcony.png" alt="">
+                  <span>Balcony</span>
+                  
+                </li>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/closet.png" alt="">
+                  <span>Walk In Closet</span>
+                </li>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/bathroom.png" alt="">
+                  <span>Bath up and separate shower</span>
+                </li>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/coffee-cup.png" alt="">
+                  <span>Coffee and/or tea making facilities</span>
+                </li>
+              </ul>
+            </div>
+            <div class="room-section-button-container">
+              <button class="back-button back-2" onclick="backToDefault(2)">SHOW LESS</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="room-container">
+        <div class="room-picture-container">
+          <img src="../assets/images/room/room-image/room3.webp" alt="">
+        </div>
+        <div class="description-detail-wrapper">
+          <div class="room-description-container overview-3">
+            <h3>PRESIDENTAL SUITE</h3>
+            <p>Experience refined luxury at its finest. Indulge in an 3 exquisite bedroom, spacious living and dining areas, and mesmerising views of the Jakarta oceanscape.</p>
+            <div class="room-specification">
+              <div class="bed-spec specification">
+                <img src="../assets/images/room/logo/double-bed.png" alt="">
+                <div class="room-description">
+                  <span>3 Rooms King Bed</span>
+                  <span>(Extra Bed Available Upon Request)</span>
+                </div>
+              </div>
+              <div class="guest-spec specification">
+                <img src="../assets/images/room/logo/user.png" alt="">
+                <span>Six Guests</span>
+              </div>
+              <div class="size-spec specification">
+                <img src="../assets/images/room/logo/maximize.png" alt="">
+                <div class="room-description">
+                  <span>90m - 99m / </span>
+                  <span>802FT - 904FT</span>
+                </div>
+              </div>
+            </div>
+            <h5>Rp. 7.500.000 / Night</h5>
+            <div class="room-section-button-container">
+              <a href="reserve.html" class="reserve-btn-room-section">RESERVE</a>
+              <button class="learn-more-btn-room-section" onclick="showDetail(3)">LEARN MORE</button>
+            </div>
+          </div>
+          <div class="room-specification-detail detail-3">
+            <h3>AMENITIES</h3>
+            <p>Immerse yourself in the exquisite fusion of Indonesia’s traditional charm and contemporary flair, as our thoughtfully furnished spaces offer stunning ocean panoramas that captivate the senses.</p>
+            <div class="room-specification">
+              <ul>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/air-conditioner.png" alt="">
+                  <span>Air Conditioning</span>
+                </li>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/extrabed.png" alt="">
+                  <span>Extra bed allowed</span>
+
+                </li>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/balcony.png" alt="">
+                  <span>Balcony</span>
+                  
+                </li>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/closet.png" alt="">
+                  <span>Walk In Closet</span>
+                </li>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/bathroom.png" alt="">
+                  <span>Bath up and separate shower</span>
+                </li>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/coffee-cup.png" alt="">
+                  <span>Coffee and/or tea making facilities</span>
+                </li>
+                <li class="detail-specification">
+                  <img src="../assets/images/room/details/cutlery.png" alt="">
+                  <span>Kitchens</span>
+                </li>
+              </ul>
+            </div>
+            <div class="room-section-button-container">
+              <button class="back-button back-3" onclick="backToDefault(3)">SHOW LESS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="all-footer-content">
+        <div class="left-footer-container footer-part">
+          <div class="left-first-row">
+            <h6>VHOTEL</h6>
+            <ul>
+              <li>Jl. Jalur Sutera Barat No. 10, Alam Sutera, Tangerang</li>
+            </ul>
+          </div>
+          <div class="left-second-row">
+            <h6 class="customer-service-text">Customer Service</h6>
+            <h5 class="phone-number-footer">0813173717317</h5>
+            <p class="email-contact-footer">info.jakarta@vhotel.com</p>
+          </div>
+        </div>
+        <div class="center-footer-container footer-part">
+          <h6>Information</h6>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="facility.html">Facilities</a></li>
+            <li><a href="reserve.html">Reservation</a></li>
+          </ul>
+        </div>
+        <div class="right-footer-container footer-part">
+          <h6>Sign up for offer, news, and travel insipiration</h6>
+          <form action="">
+            <div class="footer-input-container">
+              <input type="email" class="footer-input" placeholder="email@example.com">
+              <img src="../assets/images/about-us/right-arrow.png" class="center-footer-input" alt="">
+            </div>
+          </form>
+  
+          <div class="social-media-container">
+            <a href="https://facebook.com/" class="social-media">
+              <img src="../assets/images/footer/facebook-app-symbol.png" alt="facebook">
+            </a>
+            <a href="https://linkedin.com/" class="social-media">
+              <img src="../assets/images/footer/linkedin.png" alt="linkedin">
+            </a>
+            <a href="https://twitter.com/" class="social-media">
+              <img src="../assets/images/footer/twitter.png" alt="twitter">
+            </a>
+            <a href="https://instagram.com/" class="social-media">
+              <img src="../assets/images/footer/instagram.png" alt="instagram.png\">
+            </a>
+            <a href="https://youtube.com/" class="social-media">
+              <img src="../assets/images/footer/youtube.png" alt="youtube">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right-footer">
+        <h4>@Copyright Eldrian Daniswara Giovanni - 2602098715</h4>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/rooms.js"></script>
+  <script src="../js/carousel.js"></script>
+</body>
+</html>

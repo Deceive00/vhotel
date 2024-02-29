@@ -1,0 +1,296 @@
+@font-face {
+  font-family: josefin_sans;
+  src: url(../assets/Fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+/* libre */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@200;300&family=Roboto:wght@300;400&display=swap');
+
+body{
+  font-family: josefin_sans;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+
+.slide-1{
+  background-image: url(../assets/images/home/background-carousel/bg-1.jpg);
+}
+
+.slide-2 {
+  background-image: url(../assets/images/home/background-carousel/bg-2.jpg);
+}
+.slide-3 {
+  background-image: url(../assets/images/home/background-carousel/bg-3.jpg);
+}
+.active-slide{
+  opacity: 1;
+}
+
+.hotel-introduction{
+  font-family: josefin_sans;
+  margin-top: 100vh;
+  width: 100vw;
+  background-color: whitesmoke;
+  padding: 8% 14vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.vhotel-logo-title {
+  width: 30%;
+  margin-bottom: 10%;
+  font-size: 3rem;
+}
+.background-btn{
+  text-decoration: none;
+  color: white;
+  margin-top: 10%;
+  font-size: 1.2rem;
+  transition: cubic-bezier(0.455, 0.03, 0.515, 0.955)0.5s;
+}
+
+.background-btn:hover{
+  background-color: #B4A192;
+
+}
+.hotel-description-container{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.hotel-description-container h6{
+  font-size: 3rem;
+  letter-spacing: 4px;
+}
+
+.contact-container{
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border-left: 0.5px solid rgba(0, 0, 0, 0.285);
+}
+
+.vhotel-introduction-desc {
+  margin: 4.5vh 0;
+  font-size: 1.2rem;
+
+}
+.about-us-btn{
+  width: fit-content;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: 1px solid #B4A192;
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+}
+
+.about-us-btn:hover {
+  border: 1px solid #B4A192;
+  background-color: #B4A192;
+  color: white;
+  
+}
+.contact-container ul{
+  list-style: none;
+}
+.contact{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.contact p{
+  margin-left: 0.7rem;
+  font-size: 1.2rem;
+}
+.contact img{
+  height: 1.5rem;
+}
+.room-banner{
+  background-color: whitesmoke;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.room-banner-image {
+  position: relative;
+  width: 94%;
+  height: 55vh;
+  background-position: center;
+  transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.6s;
+  background-size: cover;
+  background-image: url(../assets/images/home/background-carousel/bg-2.jpg);
+}
+
+.room-banner-image:hover{
+  width: 100%;
+  height: 57vh;
+}
+
+.room-banner-bg-black{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.464);
+}
+.room-btn{
+  margin-top: 1.5rem;
+  width: fit-content;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: 2px solid #B4A192;
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+}
+
+.room-btn:hover {
+  border: 2px solid #B4A192;
+  background-color: #B4A192;
+  color: white;
+  
+}
+
+.room-banner-content-container {
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.room-banner-content-container h1{
+  font-size: 2rem;
+  
+}
+.room-banner-content-container p{
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.offer-container{
+  padding-top: 15vh;
+  background-color: whitesmoke;
+}
+
+.offer-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer-title h1{
+  font-size: calc(1rem + 2vw);
+  text-align: center;
+  margin-bottom: 4vh; 
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.offer-title p{
+  text-align: center;
+  margin-bottom: 6vh;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+.offer-container{
+  padding: 10vh 10%;
+}
+
+.promotion-container{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-right: 3%;
+}
+
+.promotion-content{
+  margin-right: 3%;
+}
+
+.promotion-content{
+  height: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s, opacity 0.5s, box-shadow 0.5s;;
+  opacity: 0.85;
+}
+
+.promotion-content:hover{
+  opacity: 1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  transform: scale(1.05);
+}
+
+
+@media (max-width:768px){
+  .hotel-introduction{
+    flex-direction: column;
+  }
+  .background-btn{
+    font-size: 1rem;
+  }
+  .hotel-description-container{
+    width: 100%;
+    padding-bottom: 5vh;
+  }
+  
+  .hotel-description-container h6{
+    font-size: 3rem;
+    letter-spacing: 4px;
+  }
+  .contact p{
+    font-size: 1rem;
+  }
+  .contact-container{
+    padding-top: 5vh;
+    width: 100%;
+    border-left: none;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.285);
+  }
+  
+  .vhotel-introduction-desc {
+    font-size: 1rem;
+    
+  }
+
+  .vhotel-home-title{
+    font-size: 3.3rem;
+  }
+
+  .room-banner-content-container h1{
+    font-size: 1.8rem;
+  }
+
+  .room-banner-content-container p, .room-btn, .offer-title p{
+    font-size: 1rem;
+  }
+
+  .about-us-btn{
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+}
